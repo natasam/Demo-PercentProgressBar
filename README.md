@@ -1,5 +1,5 @@
 # DemoPercentProgressBar
-## Demo Android project with Android-PercentProgressBar library
+## Demo project with Android library PercentProgressBar.
 Inspired by [NumberProgressBar](https://github.com/daimajia/NumberProgressBar), this is [**Android-PercentProgressBar**](https://github.com/natasam/Android-PercentProgressBar-lib),
 circular ProgressBar and line ProgressBar with progress percentage shown.
 
