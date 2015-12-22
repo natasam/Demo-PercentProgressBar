@@ -6,6 +6,66 @@ circular ProgressBar and line ProgressBar with progress percentage shown.
 ![example0](https://github.com/natasam/Android-PercentProgressBar/blob/master/screenshots/video0.gif)
 ![example1](https://github.com/natasam/Android-PercentProgressBar/blob/master/screenshots/0.png)
 
+## Use
+### Try Demo-PercentProgressBar. 
+
+#### Basic implementation:
+
+Example for LineProgress in your xml layout:
+```
+<com.natasa.progresspercent.LineProgress
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:background_stroke_width="2dp"
+        app:progress="0"
+        app:background_color="#9e9e9e"
+        app:progress_color="@color/colorPrimary"
+        app:stroke_width="3dp" />
+```
+or for CircularProgress, just set your values:
+```
+<com.natasa.progresspercent.CircularProgress
+        android:layout_width=""
+        android:layout_height=""
+        app:background_stroke_width=""
+        app:progress="0"
+        app:background_color=""
+        app:progress_color=""
+        app:stroke_width="" />
+```
+Example to add it directly in activity:
+```
+CircularProgress progressBar = new CircularProgress(this);
+//or
+LineProgress progressBar = new LineProgress(this);
+//and add it to your layout
+```
+Methods for use in activity, for both ProgressBars:
+```
+progressBar.setRoundEdge(true);
+        progressBar.setShadow(true);
+        progressBar.setTypeface(assetsPathToTypeface);
+       progressBar.setBackgroundColor(Color.LTGRAY);
+        progressBar.setProgressColor(Color.GREEN);
+        progressBar.setTextColor(Color.BLACK);
+        progressBar.setTextSize(30);
+        progressBar.setBackgroundStrokeWidth(10);
+        progressBar.setProgressStrokeWidth(15);
+        progressBar.resetProgress();
+        progressBar.setProgress(0);
+        progressBar.setOnProgressTrackListener(new OnProgressTrackListener() {
+            @Override
+            public void onProgressFinish() {
+                
+            }
+
+            @Override
+            public void onProgressUpdate(int progress) {
+            }
+        });
+```
 ## Licence 
 Android-PercentProgressBar
 Copyright (c) 2015  Natasa Misic
