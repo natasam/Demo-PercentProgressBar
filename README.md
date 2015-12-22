@@ -4,7 +4,7 @@ Inspired by [NumberProgressBar](https://github.com/daimajia/NumberProgressBar), 
 circular ProgressBar and line ProgressBar with progress percentage shown.
 
 ![example0](https://github.com/natasam/Android-PercentProgressBar/blob/master/screenshots/video0.gif)
-![example1](https://github.com/natasam/Android-PercentProgressBar/blob/master/screenshots/0.png)![example2](https://github.com/natasam/Android-PercentProgressBar/blob/master/screenshots/2.png)![example3](https://github.com/natasam/Android-PercentProgressBar/blob/master/screenshots/3.png)
+![example1](https://github.com/natasam/Android-PercentProgressBar/blob/master/screenshots/0.png)
 
 ## Licence 
 Android-PercentProgressBar
