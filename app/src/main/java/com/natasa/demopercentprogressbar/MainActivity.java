@@ -22,25 +22,20 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         final SeekBar seekBar = (SeekBar) findViewById(R.id.seekbar);
-
         initProgressBars();
-        
         seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
                 circularProgress.setProgress(progress);
                 lineProgress.setProgress(progress);
-
             }
 
             @Override
             public void onStartTrackingTouch(SeekBar seekBar) {
-
             }
 
             @Override
             public void onStopTrackingTouch(SeekBar seekBar) {
-
             }
         });
     }
@@ -53,7 +48,6 @@ public class MainActivity extends AppCompatActivity {
         circularProgress.setTypeface("Roboto-Regular.ttf");
 
         //methods that can be used for both progress views
-
         //circularProgress.setTypeface("Roboto-Regular.ttf");
         // lineProgress.setBackgroundColor(Color.LTGRAY);
         // lineProgress.setProgressColor(Color.GREEN);
@@ -66,7 +60,6 @@ public class MainActivity extends AppCompatActivity {
         circularProgress.setOnProgressTrackListener(new OnProgressTrackListener() {
             @Override
             public void onProgressFinish() {
-                //circularProgress.resetProgress();
             }
 
             @Override
@@ -74,6 +67,4 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-
-
 }
