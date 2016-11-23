@@ -18,7 +18,7 @@ circular ProgressBar and line ProgressBar with progress percentage shown.
 #### Basic implementation:
 
 Example for LineProgress in your xml layout:
-```
+```xml
 <com.natasa.progresspercent.LineProgress
         android:id="@+id/line"
         android:layout_width="match_parent"
@@ -31,7 +31,7 @@ Example for LineProgress in your xml layout:
         app:stroke_width="3dp" />
 ```
 or for CircularProgress, just set your values:
-```
+```xml
 <com.natasa.progresspercent.CircularProgress
         android:layout_width=""
         android:layout_height=""
@@ -42,14 +42,14 @@ or for CircularProgress, just set your values:
         app:stroke_width="" />
 ```
 Example to add it directly in activity:
-```
+```java
 CircularProgress progressBar = new CircularProgress(this);
 //or
 LineProgress progressBar = new LineProgress(this);
 //and add it to your layout
 ```
 Methods for use in activity, for both ProgressBars:
-```
+```java
 progressBar.setRoundEdge(true);
         progressBar.setShadow(true);
         progressBar.setTypeface(assetsPathToTypeface);
@@ -74,7 +74,7 @@ progressBar.setRoundEdge(true);
 ```
 ## Licence 
 Android-PercentProgressBar
-Copyright (c) 2015  Natasa Misic
+Copyright (c) 2016  Natasa Misic
  
  
       This program is free software: you can redistribute it and/or modify
